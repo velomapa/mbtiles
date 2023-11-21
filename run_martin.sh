@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+cd "$parent_path"
+
 docker stop $(docker ps -a -q --filter ancestor=ghcr.io/maplibre/martin)
 
 # -d detached mode
