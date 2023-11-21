@@ -6,6 +6,7 @@
 
 ```bash
 docker run \
+  --rm \
   -p 3000:3000 \
   -v "$(pwd)/data-mbtiles":/data-mbtiles \
   ghcr.io/maplibre/martin /data-mbtiles
