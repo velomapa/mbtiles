@@ -39,3 +39,14 @@ location ~ /mbtiles/v2/(?<fwd_path>.*) {
 ```bash
 sudo systemctl restart nginx
 ```
+
+## Data
+
+* **Zanocuj w lesie**
+  * data downloaded from https://www.bdl.lasy.gov.pl/portal/udostepnianie
+  * converted to mbtiles using tippecanoe
+
+* **Poland parks**
+  * data extracted from osm
+  * converted to geojson with travelermap.net scripts
+  * converted to mbtiles using tippecanoe
