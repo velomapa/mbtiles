@@ -43,10 +43,18 @@ sudo systemctl restart nginx
 ## Data
 
 * **Zanocuj w lesie**
-  * data downloaded from https://www.bdl.lasy.gov.pl/portal/udostepnianie
+  * data downloaded from WFS service
+    * https://mapserver.bdl.lasy.gov.pl/arcgis/services/WFS_BDL_mapa_turystyczna/MapServer/WFSServer?service=WFS&request=GetFeature&typename=WFS_BDL_mapa_turystyczna:Program_Zanocuj_w_lesie&outputFormat=GEOJSON
   * converted to mbtiles using tippecanoe
 
 * **Poland parks**
   * data extracted from osm
   * converted to geojson with travelermap.net scripts
   * converted to mbtiles using tippecanoe
+
+
+## Tippecanoe
+
+```bash
+tippecanoe -o data-mbtiles/zanocuj-w-lesie.mbtiles data-geojson/zanocuj-w-lesie.geojson --force
+```
