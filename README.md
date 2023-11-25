@@ -1,5 +1,7 @@
 # Repository with different mbtiles stuff
 
+Mbtiles are used in [velomapa.pl](https://velomapa.pl)
+
 * Server - https://maplibre.org/martin/introduction.html
 
 ## Docker in dev
@@ -43,11 +45,13 @@ sudo systemctl restart nginx
 ## Data
 
 * **Zanocuj w lesie**
+  * [velomapa.pl/mapy/zanocuj-w-lesie](https://velomapa.pl/mapy/zanocuj-w-lesie)
   * data downloaded from WFS service
     * https://mapserver.bdl.lasy.gov.pl/arcgis/services/WFS_BDL_mapa_turystyczna/MapServer/WFSServer?service=WFS&request=GetFeature&typename=WFS_BDL_mapa_turystyczna:Program_Zanocuj_w_lesie&outputFormat=GEOJSON
   * converted to mbtiles using tippecanoe
 
 * **Poland parks**
+  * [velomapa.pl/mapy/parki](https://velomapa.pl/mapy/parki)
   * data extracted from osm
   * converted to geojson with travelermap.net scripts
   * converted to mbtiles using tippecanoe
