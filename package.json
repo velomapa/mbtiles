@@ -1,0 +1,16 @@
+{
+  "name": "mbtiles",
+  "version": "1.0.0",
+  "description": "- Server - https://maplibre.org/martin/introduction.html",
+  "main": ".prettierrc.js",
+  "scripts": {
+    "zanocuj-w-lese:geojson": "tsx ./scripts/zanocuj-w-lesie/generateGeojson.ts",
+    "zanocuj-w-lese:mbtiles": "tsx ./scripts/zanocuj-w-lesie/generateMbtiles.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+}

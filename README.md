@@ -63,9 +63,19 @@ sudo systemctl restart nginx
 - **Zanocuj w lesie**
 
   - [velomapa.pl/mapy/zanocuj-w-lesie](https://velomapa.pl/mapy/zanocuj-w-lesie)
-  - data downloaded from WFS service
-    - https://mapserver.bdl.lasy.gov.pl/arcgis/services/WFS_BDL_mapa_turystyczna/MapServer/WFSServer?service=WFS&request=GetFeature&typename=WFS_BDL_mapa_turystyczna:Program_Zanocuj_w_lesie&outputFormat=GEOJSON
-  - converted to mbtiles using tippecanoe
+  - generate geojson:
+
+  ```bash
+  npm run zanocuj-w-lese:geojson
+  ```
+
+````
+
+  - convert to mbtiles using tippecanoe
+
+  ```bash
+  npm run zanocuj-w-lese:mbtiles
+````
 
 - **Poland parks**
   - [velomapa.pl/mapy/parki](https://velomapa.pl/mapy/parki)
