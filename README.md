@@ -96,5 +96,5 @@ tippecanoe -o data-mbtiles/zanocuj-w-lesie.mbtiles data-geojson/zanocuj-w-lesie.
 https://github.com/felt/tippecanoe?tab=readme-ov-file#clustered-points-world-cities-summing-the-clustered-population-visible-at-all-zoom-levels](https://github.com/felt/tippecanoe?tab=readme-ov-file#clustered-points-world-cities-summing-the-clustered-population-visible-at-all-zoom-levels)
 
 ```bash
-tippecanoe -z14 -o data-mbtiles/poland_bookingcom_hotels.mbtiles -r1 --cluster-distance=30 --cluster-maxzoom=13 data-geojson/poland_bookingcom_hotels.geojson --force
+tippecanoe -z14 -o data-mbtiles/poland_bookingcom_hotels.mbtiles -r1 --cluster-distance=20 --cluster-maxzoom=13 data-geojson/poland_bookingcom_hotels.geojson --force
 ```
